@@ -1,4 +1,4 @@
-// import { createStore } from "redux";
+import { createStore } from "redux";
 import { configureStore } from "@reduxjs/toolkit";
 import counterReducer from "./counter";
 import authReducer from "./auth";
@@ -81,5 +81,8 @@ const store = configureStore({
     auth: authReducer,
   },
 });
+
+export const counterActions = counterReducer.actions;
+export const authActions = authReducer.actions;
 
 export default store;
