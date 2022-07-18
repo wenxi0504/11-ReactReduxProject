@@ -16,7 +16,7 @@ const Counter = () => {
 
   const increaseHandler = () => {
     // dispatch({ type: "increase", amount: 5 });
-    //{type:SOME_UNIQUE_IDENTIFIER,payLoad:10}
+    //{type:SOME_UNIQUE_IDENTIFIER,playLoad:10}
     dispatch(counterActions.increase(5));
   };
   const decrementHandler = () => {

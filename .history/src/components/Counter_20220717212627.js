@@ -15,17 +15,14 @@ const Counter = () => {
   };
 
   const increaseHandler = () => {
-    // dispatch({ type: "increase", amount: 5 });
-    //{type:SOME_UNIQUE_IDENTIFIER,payLoad:10}
-    dispatch(counterActions.increase(5));
+    dispatch({ type: "increase", amount: 5 });
   };
   const decrementHandler = () => {
     // dispatch({ type: "decrement" });
-    dispatch(counterActions.decrement());
+    dispatch(counterActions.increment());
   };
   const toggleCounterHandler = () => {
-    // dispatch({ type: "toggle" });
-    dispatch(counterActions.toggleCounter());
+    dispatch({ type: "toggle" });
   };
 
   return (
