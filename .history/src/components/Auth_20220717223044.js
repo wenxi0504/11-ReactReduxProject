@@ -3,10 +3,9 @@ import { useDispatch } from "react-redux";
 import { authActions } from "../store/index";
 
 const Auth = () => {
-  const dispatch = useDispatch();
   const loginHandler = (event) => {
     event.preventDefault();
-    dispatch(authActions.login());
+    dispatch;
   };
 
   return (
